@@ -6,9 +6,11 @@ import { LayoutDashboard, BookOpen, FileText, Users, BarChart2, User, LogOut } f
 +import { useLogout } from '../hooks/useLogout';
 
  const Sidebar: React.FC = () => {
+ }
 +  const { showLogoutModal, handleLogoutClick, handleLogoutConfirm, handleLogoutCancel } = useLogout();
 +
    return (
+   )
 -    <div className="h-full bg-indigo-900 text-white w-64 flex flex-col py-6 px-4">
 +    <>
 +      <div className="h-full bg-indigo-900 text-white w-64 flex flex-col py-6 px-4">
