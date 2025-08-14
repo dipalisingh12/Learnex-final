@@ -240,7 +240,7 @@ const StudentLayout: React.FC = () => {
                     onClick={handleLogout}
                   >
                     <LogOut className="h-4 w-4 mr-2" />
-                    Logout
+                     <a href="LoginPage.tsx">Logout</a>
                   </button>
                 </motion.div>
               )}
