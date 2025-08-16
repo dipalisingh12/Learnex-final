@@ -19,9 +19,9 @@ const LogoutConfirmationModal: React.FC<LogoutConfirmationModalProps> = ({
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.9, y: -20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.9, y: -20 }}
             transition={{ duration: 0.2 }}
             className="bg-white rounded-2xl p-8 max-w-md w-full shadow-xl"
           >
